@@ -11,15 +11,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    
     <!-- Icons - Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
-
+    
     <!-- Calendar Control-->
     <link rel="stylesheet" href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" />
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
     <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.pt-br.js"></script>    
-
+    
     <!-- My CSS-->
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -35,7 +35,13 @@
                     </a>
                 </div>
                 <div class="col-sm-3 offset-md-6">
-                    LOGIN
+                    <div class="row">
+                        <div class="btn-group" role="group" aria-label="Exemplo básico">
+                            <button type="button" class="btn btn-secondary">Linguagem</button>
+                            <button type="button" class="btn btn-secondary">Contraste</button>
+                            <button type="button" class="btn btn-secondary">Tamanho</button>
+                        </div>
+                    </div>
                 </div>
             </div>           
         </header>
@@ -109,8 +115,90 @@
             </div>
         </section>
         
-        <footer>
-            Rodapé
+        <hr />
+        
+        <section>
+            <div class="row">
+                <div class="col-sm-2">
+                    <figure>
+                        <a href="#"><img class="img-fluid" src="http://placehold.it/350x280/222/fff?text=1"></a>
+                        <figcaption class="caption text-center">Musicais</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-2">
+                    <figure>
+                        <a href="#"><img class="img-fluid" src="http://placehold.it/350x280/444?text=2"></a>
+                        <figcaption class="caption text-center">Tecnologia</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-2">
+                    <figure>
+                        <a href="#"><img class="img-fluid" src="http://placehold.it/350x280/888?text=3"></a>
+                        <figcaption class="caption text-center">Balada</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-2 ">
+                    <figure>
+                        <a href="#"><img class="img-fluid" src="http://placehold.it/350x280/111/fff?text=4"></a>
+                        <figcaption class="caption text-center">Teatro</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-2">
+                    <figure>
+                        <a href="#"><img class="img-fluid" src="http://placehold.it/350x280?text=5"></a>
+                        <figcaption class="caption text-center">Cursos</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-2">
+                    <figure>
+                        <a href="#"><img class="img-fluid" src="http://placehold.it/350x280/555?text=6"></a>
+                        <figcaption class="caption text-center">Esporte</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="img/logo.png" alt="" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">© 2017-2018</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Algo legal</a></li>
+                        <li><a class="text-muted" href="#">Feature aleatória</a></li>
+                        <li><a class="text-muted" href="#">Recursos para times</a></li>
+                        <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
+                        <li><a class="text-muted" href="#">Outra coisa legal</a></li>
+                        <li><a class="text-muted" href="#">Último item</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Fontes</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Fonte</a></li>
+                        <li><a class="text-muted" href="#">Nome da fonte</a></li>
+                        <li><a class="text-muted" href="#">Outra fonte</a></li>
+                        <li><a class="text-muted" href="#">Fonte final</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Sobre</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Equipe</a></li>
+                        <li><a class="text-muted" href="#">Locais</a></li>
+                        <li><a class="text-muted" href="#">Privacidade</a></li>
+                        <li><a class="text-muted" href="#">Termos</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

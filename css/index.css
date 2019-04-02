@@ -1,37 +1,7 @@
+header {
+	margin-top: 1em;
+}
+
 #logo{
-    width: 75%;
-    margin-top: 5%
+	width: 75%;
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-    filter: invert(50%);
-}
-
-.carousel-indicators li {
-    background-color: gray;   
-}
-.carousel-indicators .active {
-    background-color: black;
-}
-
-.carousel-control-next {
-	transition: all 0.3s linear;
-	-webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
- }
- 
- .carousel-control-next:hover {
-	padding-left: 10px;
- }
- 
- .carousel-control-prev {
-	transition: all 0.3s linear;
-	-webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
- }
- 
- .carousel-control-prev:hover {
-	padding-right: 10px;
- }
- 
