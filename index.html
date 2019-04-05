@@ -22,6 +22,9 @@
     
     <!-- My CSS-->
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- My JS-->
+    <script type="text/javascript" src="js/fonte.js"></script>
 </head>
 <body>
     <div class="container">
@@ -31,15 +34,18 @@
                     <a href="./index.html">
                         <img src="img/logo.png" id="logo" class="img-fluid" 
                         title="BIS - Eventos Culturais"
-                        alt="BIS - Eventos Culturais" />                        
+                        alt="Logo: BIS - Eventos Culturais" />                        
                     </a>
                 </div>
                 <div class="col-sm-3 offset-md-6">
                     <div class="row">
                         <div class="btn-group" role="group" aria-label="Exemplo básico">
-                            <button type="button" class="btn btn-secondary">Linguagem</button>
-                            <button type="button" class="btn btn-secondary">Contraste</button>
-                            <button type="button" class="btn btn-secondary">Tamanho</button>
+                            <!-- Botões de Acessibilidade -->
+                            <!--<button type="button" class="btn btn-secondary fonte">Linguagem</button>
+                            <button type="button" class="btn btn-secondary fonte">Contraste</button> -->
+                            <button type="button" class="btn btn-secondary fonte" onClick="fonte('a');">+A</button>
+                            <button type="button" class="btn btn-secondary fonte">Tamanho</button>
+                            <button type="button" class="btn btn-secondary fonte" onClick="fonte('d');">-A</button>
                         </div>
                     </div>
                 </div>
@@ -49,13 +55,13 @@
         <section>
             <div class="row">
                 <div class="form-group col-md-4">
-                    <input type="text" class="form-control" id="evento" placeholder="Evento">
+                    <input type="text" class="form-control fonte" id="evento" placeholder="Evento">
                 </div>
                 <div class="form-group col-md-3">
-                    <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                    <input type="text" class="form-control fonte" id="cidade" placeholder="Cidade">
                 </div>
                 <div class="form-group col-md-3">
-                    <input type="text" class="form-control" id="data-consulta" placeholder="Data">
+                    <input type="text" class="form-control fonte" id="data-consulta" placeholder="Data">
                     <script>
                         $('#data-consulta').datepicker({
                             uiLibrary: 'bootstrap4',
@@ -66,7 +72,7 @@
                 </div>
                 
                 <div class="form-group col-md-2">
-                    <button type="button" class="btn btn-primary"><span class="fa fa-search"></span> Pesquisar</button>
+                    <button type="button" class="btn btn-primary fonte"><span class="fa fa-search"></span> Pesquisar</button>
                 </div>
             </div>
         </section>
@@ -80,7 +86,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/sesc.jpg" alt="Sesc São Carlos/SP">
+                        <img class="d-block w-100" src="img/sesc.jpg" title="Sesc São Carlos/SP" alt="Sesc São Carlos/SP">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Sesc São Carlos/SP</h3>
                             <p>Simpósio de Atividades Físicas Adaptadas</p>
@@ -88,7 +94,7 @@
                         </div>            
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/birigui.jpg" alt="Sesc Birigui/SP">
+                        <img class="d-block w-100" src="img/birigui.jpg" title="Sesc Birigui/SP" alt="Sesc Birigui/SP">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Sesc Birigui/SP</h3>
                             <p>Artes Visuais - Mural Claudio Ethos</p>
@@ -96,7 +102,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/Catanduva.jpg" alt="Sesc Catanduva/SP">
+                        <img class="d-block w-100" src="img/Catanduva.jpg" title="Sesc Catanduva/SP" alt="Sesc Catanduva/SP">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Sesc Catanduva/SP</h3>
                             <p>Baila Comigo! – Corpo e Movimento: Trabalho Social com Idosos</p>
@@ -121,85 +127,85 @@
             <div class="row">
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/musica.png"></a>
-                        <figcaption class="caption text-center">Música</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/musica.png" title="Música" alt="Categoria Música"></a>
+                        <figcaption class="caption text-center fonte">Música</figcaption>
                     </figure>
                 </div>
                 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/danca.png"></a>
-                        <figcaption class="caption text-center">Dança</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/danca.png" title="Dança" alt="Categoria Dança"></a>
+                        <figcaption class="caption text-center fonte">Dança</figcaption>
                     </figure>
                 </div>
                 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/festa.png"></a>
-                        <figcaption class="caption text-center">Festa</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/festa.png" title="Festa" alt="Categoria Festa"></a>
+                        <figcaption class="caption text-center fonte">Festa</figcaption>
                     </figure>
                 </div>
                 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/teatro.png"></a>
-                        <figcaption class="caption text-center">Teatro</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/teatro.png" title="Teatro" alt="Categoria Teatro"></a>
+                        <figcaption class="caption text-center fonte">Teatro</figcaption>
                     </figure>
                 </div>
                 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/arte.png"></a>
-                        <figcaption class="caption text-center">Arte</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/arte.png" title="Arte" alt="Categoria Arte"></a>
+                        <figcaption class="caption text-center fonte">Arte</figcaption>
                     </figure>
                 </div>
 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/cinema.png"></a>
-                        <figcaption class="caption text-center">Cinema</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/cinema.png" title="Cinema" alt="Categoria Cinema"></a>
+                        <figcaption class="caption text-center fonte">Cinema</figcaption>
                     </figure>
                 </div>
                 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/moda.png"></a>
-                        <figcaption class="caption text-center">Moda</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/moda.png" title="Moda" alt="Categoria Moda"></a>
+                        <figcaption class="caption text-center fonte">Moda</figcaption>
                     </figure>
                 </div>
 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/foto.png"></a>
-                        <figcaption class="caption text-center">Fotográfia</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/foto.png" title="Fotográfia" alt="Categoria Fotográfia"></a>
+                        <figcaption class="caption text-center fonte">Fotográfia</figcaption>
                     </figure>
                 </div>
 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/cursos.png"></a>
-                        <figcaption class="caption text-center">Cursos</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/cursos.png" title="Cursos" alt="Categoria Cursos"></a>
+                        <figcaption class="caption text-center fonte">Cursos</figcaption>
                     </figure>
                 </div>
 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/esporte.png"></a>
-                        <figcaption class="caption text-center">Esporte</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/esporte.png" title="Esportes" alt="Categoria Esportes"></a>
+                        <figcaption class="caption text-center fonte">Esportes</figcaption>
                     </figure>
                 </div>
 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/jogo.png"></a>
-                        <figcaption class="caption text-center">Jogos</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/jogo.png" title="Jogos" alt="Categoria Jogos"></a>
+                        <figcaption class="caption text-center fonte">Jogos</figcaption>
                     </figure>
                 </div>
 
                 <div class="col-sm-1">
                     <figure>
-                        <a href="#"><img class="img-fluid" src="img/comida.png"></a>
-                        <figcaption class="caption text-center">Gastronomia</figcaption>
+                        <a href="#"><img class="img-fluid" src="img/comida.png" title="Gastronomia" alt="Categoria Gastronomia"></a>
+                        <figcaption class="caption text-center fonte">Gastronomia</figcaption>
                     </figure>
                 </div>
             </div>
@@ -219,7 +225,7 @@
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="http://placehold.it/350x280/222/fff?text=1" alt="Imagem de capa do card">
                             <div class="card-body">
-                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                <p class="card-text fonte">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                             </div>
                         </div>
                     </a>
@@ -229,7 +235,7 @@
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="http://placehold.it/350x280/444?text=2" alt="Imagem de capa do card">
                             <div class="card-body">
-                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                <p class="card-text fonte">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                             </div>
                         </div>
                     </a>
@@ -239,7 +245,7 @@
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="http://placehold.it/350x280/888?text=3" alt="Imagem de capa do card">
                             <div class="card-body">
-                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                <p class="card-text fonte">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                             </div>
                         </div>
                     </a>
@@ -248,7 +254,7 @@
             <br /> <br />
             <div class="row">
                 <div class="col text-center">
-                    <button class="btn btn-primary">Carregar mais</button>
+                    <button class="btn btn-primary fonte">Carregar mais</button>
                 </div>
             </div>
             <br /> <br />
@@ -257,36 +263,38 @@
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
                 <div class="col-12 col-md">
-                    <img class="mb-2" src="img/logo.png" alt="" width="24" height="24">
-                    <small class="d-block mb-3 text-muted">©Copyright BIS | 2017-2018</small>
+                    <img class="mb-2 fonte" src="img/logo.png" alt="Rodapé - Logo BIS" width="24" height="24">
+                    <small class="d-block mb-3 text-muted fonte">©Copyright BIS | 2017-2018</small>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Features</h5>
+                    <h5>Empresa</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Algo legal</a></li>
-                        <li><a class="text-muted" href="#">Feature aleatória</a></li>
-                        <li><a class="text-muted" href="#">Recursos para times</a></li>
-                        <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
-                        <li><a class="text-muted" href="#">Outra coisa legal</a></li>
-                        <li><a class="text-muted" href="#">Último item</a></li>
+                        <li><a class="text-muted fonte" href="#">Quem Somos</a></li>
+                        <li><a class="text-muted fonte" href="#">Endereço</a></li>
+                        <li><a class="text-muted fonte" href="#">Contato</a></li>
+                        <li><a class="text-muted fonte" href="#">Equipe</a></li>
+                        <li><a class="text-muted fonte" href="#">Parceiros</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Fontes</h5>
+                    <h5>Ajuda</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Fonte</a></li>
-                        <li><a class="text-muted" href="#">Nome da fonte</a></li>
-                        <li><a class="text-muted" href="#">Outra fonte</a></li>
-                        <li><a class="text-muted" href="#">Fonte final</a></li>
+                        <li><a class="text-muted fonte" href="#">Central de Ajuda</a></li>
+                        <li><a class="text-muted fonte" href="#">Como Anunciar</a></li>
+                        <li><a class="text-muted fonte" href="#">Mapa do Site</a></li>
+                        <li><a class="text-muted fonte" href="#">Carreira</a></li>
+                        <li><a class="text-muted fonte" href="#">Termos e Privacidade</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Sobre</h5>
+                    <h5>Mídias Sociais</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Equipe</a></li>
-                        <li><a class="text-muted" href="#">Locais</a></li>
-                        <li><a class="text-muted" href="#">Privacidade</a></li>
-                        <li><a class="text-muted" href="#">Termos</a></li>
+                        <li><a class="text-muted fonte" href="#">LinkedIn</a></li>
+                        <li><a class="text-muted fonte" href="#">Facebook</a></li>
+                        <li><a class="text-muted fonte" href="#">YouTube</a></li>
+                        <li><a class="text-muted fonte" href="#">Instagram</a></li>
+                        <li><a class="text-muted fonte" href="#">Twitter</a></li>
+                        <li><a class="text-muted fonte" href="#">Whatzapp</a></li>
                     </ul>
                 </div>
             </div>
