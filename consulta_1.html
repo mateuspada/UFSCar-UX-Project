@@ -25,6 +25,7 @@
     
     <!-- My JS-->
     <script type="text/javascript" src="js/fonte.js"></script>
+    <script type="text/javascript" src="js/consulta.js"></script>
 </head>
 <body>
     <div class="container fonte">
@@ -51,7 +52,7 @@
                     <br />
                     <div class="row">
                         <div class="col-sm-12 text-right">
-                            <a type="button" class="btn btn-primary fonte" href="./em-construcao.html">Login</a>    
+                            <button class="btn btn-primary fonte" onclick="login();"> Login</button>   
                         </div>
                     </div>
                 </div>
@@ -74,13 +75,13 @@
         <section>
             <div class="row">
                 <div class="form-group col-md-4">
-                    <input type="text" class="form-control fonte" id="evento" placeholder="Evento">
+                    <input type="text" class="form-control fonte" id="evento" name="evento" placeholder="Evento">
                 </div>
                 <div class="form-group col-md-3">
-                    <input type="text" class="form-control fonte" id="cidade" placeholder="Cidade">
+                    <input type="text" class="form-control fonte" id="cidade" name="cidade" placeholder="Cidade">
                 </div>
                 <div class="form-group col-md-3">
-                    <input type="text" class="form-control fonte" id="data-consulta" placeholder="Data">
+                    <input type="text" class="form-control fonte" id="data-consulta" name="data-consulta" placeholder="Data">
                     <script>
                         $('#data-consulta').datepicker({
                             uiLibrary: 'bootstrap4',
@@ -91,7 +92,7 @@
                 </div>
                 
                 <div class="form-group col-md-2">
-                    <a type="button" href="./em-construcao.html" class="btn btn-primary fonte"><span class="fa fa-search"></span> Pesquisar</a>
+                    <button class="btn btn-primary fonte" onclick="pesquisa();"><span class="fa fa-search"></span> Pesquisar</button>
                 </div>
             </div>
         </section>
