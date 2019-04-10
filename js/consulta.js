@@ -14,3 +14,8 @@ function pesquisa(){
 		window.location = 'consulta_1.html';
 	}
 }
+
+
+function mensagem(){
+	$("#msg").css("display", "block");
+}
