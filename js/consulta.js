@@ -6,12 +6,18 @@ function login(){
 function pesquisa(){
 
 	var cidade = $('input[name="cidade"]').val();
-	console.log(cidade);
+	var data = $('input[name="data-consulta"]').val();
+
+	console.log(data);
 
 	if (cidade == 'São Carlos' || cidade == 'são carlos') {
 		window.location = 'consulta_SaoCarlos.html';
 	} else {
-		window.location = 'consulta_1.html';
+		if (data == '12/04/2019') {
+			window.location = 'consulta_Data.html';
+		} else {
+			$("#msgPesquisa").css("display", "block");
+		}
 	}
 }
 
